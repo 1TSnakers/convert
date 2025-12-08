@@ -49,7 +49,7 @@ async function init () {
     line = line.trim();
 
     const parts = line.split(" ");
-    if (parts.length < 2) return;
+    if (parts.length < 2) continue;
 
     const flags = parts[0];
     const description = parts.slice(2).join(" ");
